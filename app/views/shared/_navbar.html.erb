@@ -19,7 +19,7 @@
 
             <li class="nav-item">
                 <%= link_to user_path(current_user.username), class: "nav-link" do %>
-                    <%= image_url avatar_url_for(current_user, size: 24), class: "rounded-circle mr-1" %>
+                    <%= image_tag avatar_url_for(current_user, size: 24), class: "rounded-circle mr-1" %>
                     <%= current_user.username %>
                 <% end %>
             </li>
